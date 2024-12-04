@@ -1,0 +1,240 @@
+/* Modern Variables */
+:root {
+    --primary-color: #2a2a2a;
+    --accent-color: #00ff9d;
+    --text-color: #ffffff;
+    --background-color: #1a1a1a;
+    --card-background: #2d2d2d;
+}
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    width: 100%;
+    padding: 1.5rem;
+    background: rgba(26, 26, 26, 0.95);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li a {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 0.5rem 1.5rem;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: var(--accent-color);
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b') center/cover;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.typing-text {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+    height: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+}
+
+/* Sections */
+section {
+    padding: 5rem 2rem;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--accent-color);
+}
+
+/* Services Grid */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+.service-card {
+    background: var(--card-background);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-card i {
+    font-size: 3rem;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+/* Contact Form */
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input, textarea {
+    padding: 1rem;
+    background: var(--card-background);
+    border: none;
+    border-radius: 5px;
+    color: var(--text-color);
+}
+
+button {
+    padding: 1rem;
+    background: var(--accent-color);
+    color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+button:hover {
+    transform: translateY(-3px);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: var(--primary-color);
+}
+
+.social-links {
+    margin-bottom: 1rem;
+}
+
+.social-links a {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    margin: 0 1rem;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: var(--accent-color);
+}
+
+/* 3D Card Effect */
+.service-card {
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.service-card:hover {
+    transform: rotateY(10deg) translateZ(20px);
+    box-shadow: -20px 20px 40px rgba(0, 255, 157, 0.2);
+}
+
+/* Mouse Trail Effect */
+.mouse-trail {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    background: var(--accent-color);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+/* Floating Animation */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+
+.floating {
+    animation: float 4s ease-in-out infinite;
+}
+
+/* Glowing Text Effect */
+.glow-text {
+    text-shadow: 0 0 10px var(--accent-color),
+                 0 0 20px var(--accent-color),
+                 0 0 30px var(--accent-color);
+}
+
+/* 3D Button Effect */
+.cta-button {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cta-button:hover {
+    transform: translateZ(20px) rotateX(10deg);
+    box-shadow: 0 10px 20px rgba(0, 255, 157, 0.3);
+} 

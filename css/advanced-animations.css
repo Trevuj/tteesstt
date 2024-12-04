@@ -1,0 +1,81 @@
+/* Advanced Animations */
+
+/* Button Hover Effect */
+.cta-button {
+    position: relative;
+    overflow: hidden;
+    transition: color 0.4s;
+}
+
+.cta-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: 0.5s;
+}
+
+.cta-button:hover::before {
+    left: 100%;
+}
+
+.cta-button:hover {
+    color: var(--primary-color);
+}
+
+/* Text Reveal Animation */
+.text-reveal {
+    overflow: hidden;
+    position: relative;
+}
+
+.text-reveal::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--primary-color);
+    z-index: 1;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+}
+
+.text-reveal:hover::before {
+    transform: translateX(100%);
+}
+
+.text-reveal span {
+    position: relative;
+    z-index: 2;
+}
+
+/* Image Zoom Effect */
+.image-zoom {
+    overflow: hidden;
+    position: relative;
+}
+
+.image-zoom img {
+    transition: transform 0.5s ease;
+}
+
+.image-zoom:hover img {
+    transform: scale(1.1);
+}
+
+/* Fade In Animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+} 

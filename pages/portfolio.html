@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - MR Security</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/portfolio.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="../index.html" class="logo">
+                <div class="logo-container">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>MR Security</span>
+                </div>
+            </a>
+
+            <nav class="main-nav">
+                <a href="../index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="tools.html">Tools</a>
+                <a href="portfolio.html" class="active">Portfolio</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <div class="header-cta">
+                <a href="audit.html" class="join-btn">
+                    Security Audit
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <button class="menu-toggle">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content animate-fade-in">
+                <h1>Our <span class="text-gradient">Portfolio</span></h1>
+                <p class="hero-text">Showcasing our successful security projects and achievements</p>
+            </div>
+        </div>
+        <div class="hero-background"></div>
+    </section>
+
+    <!-- Portfolio Filters -->
+    <section class="portfolio-filters">
+        <div class="container">
+            <div class="filters-wrapper scroll-fade-in">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="pentest">Penetration Testing</button>
+                <button class="filter-btn" data-filter="audit">Security Audits</button>
+                <button class="filter-btn" data-filter="incident">Incident Response</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Case Studies -->
+    <section class="featured-cases">
+        <div class="container">
+            <!-- Featured Case Study 1 -->
+            <div class="case-study featured scroll-fade-in">
+                <div class="case-content">
+                    <span class="case-category">Financial Security</span>
+                    <h2>Major Bank Security Overhaul</h2>
+                    <p>Complete security assessment and infrastructure hardening for a leading financial institution.</p>
+                    <ul class="case-highlights">
+                        <li><i class="fas fa-check-circle"></i> Identified 15 critical vulnerabilities</li>
+                        <li><i class="fas fa-check-circle"></i> Implemented zero-trust architecture</li>
+                        <li><i class="fas fa-check-circle"></i> Enhanced security protocols</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">View Case Study</a>
+                </div>
+                <div class="case-image">
+                    <img src="https://images.unsplash.com/photo-1563986768494-4dee2763ff3f" alt="Banking Security">
+                </div>
+            </div>
+
+            <!-- Featured Case Study 2 -->
+            <div class="case-study featured reverse scroll-fade-in">
+                <div class="case-content">
+                    <span class="case-category">E-commerce Protection</span>
+                    <h2>E-commerce Platform Security</h2>
+                    <p>Comprehensive security solution for a global e-commerce platform handling millions of transactions.</p>
+                    <ul class="case-highlights">
+                        <li><i class="fas fa-check-circle"></i> Secured payment processing</li>
+                        <li><i class="fas fa-check-circle"></i> Implemented fraud detection</li>
+                        <li><i class="fas fa-check-circle"></i> Enhanced data protection</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">View Case Study</a>
+                </div>
+                <div class="case-image">
+                    <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3" alt="E-commerce Security">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Grid -->
+    <section class="project-grid">
+        <div class="container">
+            <div class="grid grid-3">
+                <!-- Project Card 1 -->
+                <div class="project-card scroll-fade-in" data-category="pentest">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b" alt="Project 1">
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Penetration Testing</span>
+                        <h3>Healthcare System Security</h3>
+                        <p>Comprehensive penetration testing for a major healthcare provider.</p>
+                        <a href="#" class="project-link">View Details →</a>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="project-card scroll-fade-in" data-category="audit">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31" alt="Project 2">
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Security Audit</span>
+                        <h3>Government Infrastructure</h3>
+                        <p>Security audit and compliance assessment for government systems.</p>
+                        <a href="#" class="project-link">View Details →</a>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="project-card scroll-fade-in" data-category="incident">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551808525-51a94da548ce" alt="Project 3">
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Incident Response</span>
+                        <h3>Ransomware Recovery</h3>
+                        <p>Successful incident response and system recovery for enterprise client.</p>
+                        <a href="#" class="project-link">View Details →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card scroll-fade-in">
+                    <h3>500+</h3>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="stat-card scroll-fade-in">
+                    <h3>100+</h3>
+                    <p>Happy Clients</p>
+                </div>
+                <div class="stat-card scroll-fade-in">
+                    <h3>50+</h3>
+                    <p>Countries Served</p>
+                </div>
+                <div class="stat-card scroll-fade-in">
+                    <h3>99%</h3>
+                    <p>Success Rate</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- [Same footer as homepage] -->
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/main.js"></script>
+</body>
+</html> 
